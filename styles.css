@@ -798,36 +798,339 @@ ul {
   opacity: 0.75;
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   APP SECTION
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
-.app-section {
-  background: linear-gradient(180deg, var(--mustard-pale) 0%, #FFF8EC 100%);
+/* ╔══════════════════════════════════════════════════════════════════════
+   ORDER JOURNEY SECTION
+╚══════════════════════════════════════════════════════════════════════ */
+.order-journey {
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
 }
 
-.app-inner {
+/* Subtle decorative blob */
+.order-journey::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(244, 185, 63, 0.1) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.order-journey::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(74, 20, 16, 0.06) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Section eyebrow override for this section */
+.eyebrow-journey {
+  color: var(--brown-xlight) !important;
+}
+
+/* ── Journey Track (3-column grid + arrows) ─── */
+.journey-track {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 0 20px;
+  margin-bottom: 52px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Each Step ─── */
+.journey-step {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 36px 28px 32px;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.journey-step:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(244, 185, 63, 0.5);
+}
+
+/* Step icon area */
+.journey-icon-wrap {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.journey-icon-ring {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, var(--brown) 0%, #2E0D0A 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 28px rgba(74, 20, 16, 0.3), 0 0 0 6px rgba(244, 185, 63, 0.12);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.journey-step:hover .journey-icon-ring {
+  box-shadow: 0 12px 36px rgba(74, 20, 16, 0.4), 0 0 0 8px rgba(244, 185, 63, 0.2);
+  transform: rotate(-3deg) scale(1.05);
+}
+
+.journey-icon-ring svg {
+  width: 56px;
+  height: 56px;
+}
+
+/* Step number badge */
+.journey-step-num {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 28px;
+  height: 28px;
+  background: var(--mustard);
+  color: var(--brown);
+  border-radius: 50%;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(244, 185, 63, 0.5);
+  border: 2px solid var(--white);
+  letter-spacing: 0;
+}
+
+/* Step body text */
+.journey-step-body h3 {
+  color: var(--brown);
+  margin-bottom: 10px;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.journey-step-body p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+/* ── Connecting arrows ─── */
+.journey-arrow {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  animation: arrowFloat 2.5s ease-in-out infinite;
+}
+
+.journey-arrow svg {
+  width: 80px;
+  height: 40px;
+}
+
+@keyframes arrowFloat {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(5px); }
+}
+
+/* ── Guarantee pills strip ─── */
+.journey-guarantee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.journey-guarantee-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, var(--brown) 0%, #3A100D 100%);
+  color: var(--mustard-light);
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 16px rgba(74, 20, 16, 0.2);
+  letter-spacing: 0.01em;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.journey-guarantee-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74, 20, 16, 0.28);
+}
+
+/* ── Responsive ─── */
+@media (max-width: 900px) {
+  .journey-track {
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+  }
+
+  .journey-arrow {
+    transform: rotate(90deg);
+    margin: 0 auto;
+    animation: arrowFloatDown 2.5s ease-in-out infinite;
+  }
+
+  @keyframes arrowFloatDown {
+    0%, 100% { transform: rotate(90deg) translateX(0); }
+    50%       { transform: rotate(90deg) translateX(5px); }
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-step {
+    padding: 28px 20px 24px;
+  }
+
+  .journey-icon-ring {
+    width: 76px;
+    height: 76px;
+  }
+
+  .journey-icon-ring svg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .journey-guarantee {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ╔══════════════════════════════════════════════════════════════════════
+   APP DOWNLOAD SECTION — Redesigned card layout
+╚══════════════════════════════════════════════════════════════════════ */
+.app-section {
+  background: var(--cream);
+  padding: 80px 0;
+}
+
+/* ── Outer card wrapper ── */
+.app-download-card {
+  background: linear-gradient(135deg, var(--mustard-pale) 0%, #FFF3D6 40%, #FFEAB8 100%);
+  border-radius: var(--radius-xl);
+  border: 1.5px solid rgba(244, 185, 63, 0.35);
+  box-shadow: 0 24px 80px rgba(74, 20, 16, 0.1), 0 2px 0 rgba(244, 185, 63, 0.3) inset;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
   align-items: center;
+  gap: 0;
+  min-height: 420px;
+  overflow: hidden;
+  position: relative;
 }
 
-.app-text h2 {
-  margin-bottom: 12px;
+/* Decorative curved blob inside card */
+.app-download-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: 180px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(244, 185, 63, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.app-download-card::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 80px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(74, 20, 16, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ── LEFT column ── */
+.app-download-left {
+  padding: 60px 52px 60px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.app-eyebrow {
+  color: var(--brown-xlight) !important;
+}
+
+.app-download-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  color: var(--brown);
+  margin-bottom: 14px;
+  margin-top: 8px;
 }
 
 .app-subline {
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 24px;
+  max-width: 380px;
+}
+
+/* Feature chips */
+.app-feature-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 32px;
 }
 
+.app-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(74, 20, 16, 0.08);
+  color: var(--brown);
+  border: 1px solid rgba(74, 20, 16, 0.14);
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.app-chip:hover {
+  background: rgba(74, 20, 16, 0.14);
+  border-color: rgba(74, 20, 16, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Store badge buttons */
 .app-store-btns {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 28px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -835,249 +1138,308 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform var(--transition), filter var(--transition), box-shadow var(--transition);
   text-decoration: none;
   overflow: hidden;
 }
 
 .store-img-btn:hover {
-  transform: translateY(-2px) scale(1.02);
-  filter: brightness(1.08);
-  box-shadow: 0 8px 24px rgba(74, 20, 16, 0.2);
+  transform: translateY(-3px) scale(1.03);
+  filter: brightness(1.05);
+  box-shadow: 0 10px 28px rgba(74, 20, 16, 0.22);
 }
 
 .store-img-btn:active {
-  transform: translateY(0) scale(0.99);
+  transform: translateY(0) scale(0.98);
 }
 
 .app-store-badge-img {
-  height: 48px;
+  height: 50px;
   width: auto;
   display: block;
   object-fit: contain;
   border-radius: 8px;
 }
 
-.qr-placeholder {
+/* ── RIGHT column ── */
+.app-download-right {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  font-style: italic;
-  margin-top: 12px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 40px 0 20px;
+  height: 100%;
+  min-height: 420px;
+  z-index: 2;
 }
 
-.qr-box {
+/* Floating stat badges */
+.app-float-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background: var(--white);
-  border-radius: 12px;
-  padding: 6px;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  box-shadow: 0 8px 28px rgba(74, 20, 16, 0.15);
+  border: 1px solid rgba(244, 185, 63, 0.3);
+  z-index: 10;
+  backdrop-filter: blur(6px);
+  animation: floatBadge 3.5s ease-in-out infinite;
 }
 
-.qr-box img,
-.qr-box svg {
-  width: 130px;
-  height: 130px;
-  object-fit: contain;
-  border-radius: 6px;
-  display: block;
+.app-float-badge--rating {
+  top: 24px;
+  left: -20px;
+  animation-delay: 0s;
 }
 
-/* Phone mockup */
-.app-phone {
+.app-float-badge--users {
+  top: 110px;
+  right: 10px;
+  animation-delay: 1.5s;
+}
+
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+.float-badge-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.float-badge-title {
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--brown);
+  line-height: 1.2;
+}
+
+.float-badge-sub {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* ── Phone frame ── */
+.app-phone-wrap {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  height: 100%;
 }
 
-.phone-mockup-wrap {
-  position: relative;
+.app-phone-glow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(ellipse at 50% 80%, rgba(244, 185, 63, 0.45), transparent 65%);
+  filter: blur(24px);
+  border-radius: 50%;
+  z-index: 0;
+  animation: glowPulse 4s ease-in-out infinite;
 }
 
-.phone-frame {
-  width: 240px;
-  height: 480px;
-  background: var(--brown);
-  border-radius: 40px;
-  padding: 12px;
-  box-shadow: 0 30px 80px rgba(74, 20, 16, 0.3), inset 0 0 0 1.5px rgba(244, 185, 63, 0.3);
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50%       { opacity: 1;   transform: translateX(-50%) scale(1.1); }
+}
+
+.app-phone-frame {
+  width: 230px;
+  background: #1A1A1A;
+  border-radius: 44px;
+  padding: 10px 10px 6px;
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255,255,255,0.08),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
   position: relative;
   z-index: 2;
+  transform: translateY(-20px);
 }
 
-.phone-notch {
+/* Dynamic island notch */
+.app-phone-island {
   width: 80px;
-  height: 18px;
-  background: var(--brown);
-  border-radius: 0 0 12px 12px;
-  margin: 0 auto 4px;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 0 0 1.5px rgba(244, 185, 63, 0.2);
+  height: 22px;
+  background: #0A0A0A;
+  border-radius: 50px;
+  margin: 0 auto 6px;
 }
 
-.phone-screen {
-  background: var(--cream);
-  border-radius: 30px;
-  height: 416px;
+.app-phone-screen {
+  background: var(--white);
+  border-radius: 36px;
   overflow: hidden;
+  height: 430px;
 }
 
-.phone-bottom-bar {
-  width: 60px;
+/* QR screen content */
+.app-qr-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 18px;
+  gap: 10px;
+  background: linear-gradient(170deg, #FFFFFF 0%, #FFFBF4 100%);
+}
+
+.app-qr-logo {
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--brown);
+  letter-spacing: -0.01em;
+  margin-bottom: 2px;
+}
+
+.app-qr-label {
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--brown-xlight);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.app-qr-frame {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 10px;
+  border: 2px solid rgba(244, 185, 63, 0.5);
+  box-shadow: 0 4px 20px rgba(74, 20, 16, 0.12);
+}
+
+.app-qr-img {
+  width: 138px;
+  height: 138px;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.app-qr-sub {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-align: center;
+}
+
+.app-qr-stores {
+  display: flex;
+  gap: 6px;
+}
+
+.app-qr-store-pill {
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  background: var(--brown);
+  color: var(--mustard);
+  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+}
+
+/* Home indicator bar */
+.app-phone-bar {
+  width: 70px;
   height: 4px;
-  background: rgba(244, 185, 63, 0.5);
+  background: rgba(255,255,255,0.25);
   border-radius: 2px;
   margin: 6px auto 0;
 }
 
-/* App UI inside phone */
-.app-screen-ui {
-  padding: 16px 14px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.app-screen-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.app-screen-logo {
-  font-family: 'Poppins', 'Nunito', sans-serif;
-  font-weight: 900;
-  font-size: 1rem;
-  color: var(--brown);
-}
-
-.app-screen-greeting {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-}
-
-.app-screen-card {
-  background: var(--brown);
-  border-radius: var(--radius-md);
-  padding: 14px;
-}
-
-.app-card-label {
-  font-size: 0.65rem;
-  color: rgba(253, 240, 198, 0.6);
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.app-card-meal {
-  font-family: 'Poppins', 'Nunito', sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
-  color: var(--mustard);
-  margin-bottom: 8px;
-}
-
-.app-card-status {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.7rem;
-  color: rgba(253, 240, 198, 0.7);
-}
-
-.status-dot {
-  width: 6px;
-  height: 6px;
-  background: #22C55E;
-  border-radius: 50%;
-  display: inline-block;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .app-download-card {
+    grid-template-columns: 1fr;
   }
 
-  50% {
-    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0);
+  .app-download-left {
+    padding: 48px 36px 32px;
+    text-align: center;
+  }
+
+  .app-subline {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-feature-chips {
+    justify-content: center;
+  }
+
+  .app-store-btns {
+    justify-content: center;
+  }
+
+  .app-download-right {
+    justify-content: center;
+    padding: 0 24px 56px;
+    min-height: 360px;
+  }
+
+  .app-float-badge--rating {
+    top: 12px;
+    left: 10px;
+  }
+
+  .app-float-badge--users {
+    top: 12px;
+    right: 10px;
+  }
+
+  .app-phone-frame {
+    width: 200px;
+    border-radius: 38px;
+  }
+
+  .app-phone-screen {
+    height: 380px;
+    border-radius: 30px;
+  }
+
+  .app-qr-img {
+    width: 120px;
+    height: 120px;
   }
 }
 
-.app-screen-meals {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
+@media (max-width: 480px) {
+  .app-download-left {
+    padding: 36px 24px 24px;
+  }
 
-.app-meal-pill {
-  font-size: 0.62rem;
-  font-weight: 700;
-  font-family: 'Poppins', 'Nunito', sans-serif;
-  padding: 5px 10px;
-  border-radius: var(--radius-pill);
-  background: rgba(74, 20, 16, 0.08);
-  color: var(--text-muted);
-  border: 1px solid var(--border);
-}
+  .app-download-title {
+    font-size: 1.8rem;
+  }
 
-.active-meal {
-  background: var(--mustard);
-  color: var(--brown);
-  border-color: var(--mustard);
-}
+  .app-store-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-.app-screen-sub {
-  margin-top: auto;
-  background: var(--mustard-pale);
-  border-radius: var(--radius-md);
-  padding: 12px;
-  border: 1px solid rgba(244, 185, 63, 0.4);
-}
+  .store-img-btn {
+    width: 100%;
+    justify-content: center;
+  }
 
-.sub-label {
-  font-size: 0.62rem;
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-.sub-dates {
-  font-family: 'Poppins', 'Nunito', sans-serif;
-  font-weight: 800;
-  font-size: 0.82rem;
-  color: var(--brown);
-  margin: 3px 0 8px;
-}
-
-.sub-pause-btn {
-  display: inline-block;
-  font-size: 0.62rem;
-  font-weight: 800;
-  font-family: 'Poppins', 'Nunito', sans-serif;
-  color: var(--brown);
-  background: var(--white);
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
-  border: 1.5px solid var(--border);
-}
-
-/* Phone glow */
-.phone-glow {
-  position: absolute;
-  inset: 40px -40px;
-  background: radial-gradient(ellipse at 50% 60%, rgba(244, 185, 63, 0.35), transparent 70%);
-  filter: blur(30px);
-  z-index: 1;
+  .app-store-badge-img {
+    height: 44px;
+  }
 }
 
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
