@@ -2,854 +2,799 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Tiffexx — Fresh tiffins, delivered daily. Subscribe to homemade meals from trusted local partners — lunch &amp; dinner, right at your door. Noida, India." />
-    <meta name="keywords"
-        content="tiffin delivery, meal subscription, home cooked food, breakfast lunch dinner, Noida, tiffin service" />
-    <meta property="og:title" content="Tiffexx — Fresh tiffins, delivered daily" />
-    <meta property="og:description"
-        content="Subscribe to homemade meals from trusted local partners — lunch &amp; dinner, right at your door." />
-    <meta property="og:type" content="website" />
-    <title>Tiffexx — Fresh Tiffins, Delivered Daily</title>
-    <link rel="icon" type="image/x-icon" href="./assets/icon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Nunito:wght@400;600;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Tiffexx — Fresh home-style tiffins delivered daily in Noida. Subscribe to lunch or dinner from FSSAI-licensed local kitchens. Pause anytime, live tracking included." />
+  <meta name="keywords"
+    content="tiffin delivery, meal subscription, home cooked food, lunch dinner, Noida, tiffin service, daily tiffin" />
+  <meta property="og:title" content="Tiffexx — Ghar jaisa khana, delivered daily" />
+  <meta property="og:description"
+    content="Fresh lunch &amp; dinner tiffin subscriptions in Noida. FSSAI-licensed kitchens, pause anytime, live tracking." />
+  <meta property="og:type" content="website" />
+  <title>Tiffexx — Ghar jaisa khana, delivered daily</title>
+  <link rel="icon" type="image/x-icon" href="./assets/icon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="no-nav">
+<body>
 
-    <!-- ╔══════════════════ HERO — VIDEO BACKGROUND ══════════════════╗ -->
-    <section class="hero" id="hero" aria-label="Hero section">
+  <!-- ╔══════════════════ STICKY NAVIGATION ══════════════════╗ -->
+  <header class="site-nav" id="main-nav" role="banner">
+    <div class="container nav-inner">
 
-        <!-- ▶ BACKGROUND VIDEO — replace src with your video path -->
-        <video class="hero-video" autoplay muted loop playsinline poster="./assets/breakfast_tiffin.png"
-            aria-hidden="true">
-            <!-- PLACEHOLDER: swap the src below with your actual video file path -->
-            <source src="./assets/Create_a_second_premium_a.mp4" type="video/mp4" />
-        </video>
+      <!-- Logo / wordmark -->
+      <a href="#" class="nav-logo" aria-label="Tiffexx — go to homepage">
+        <img src="./assets/tiffexx-logo.png" alt="Tiffexx" class="nav-logo-img" />
+      </a>
 
-        <!-- Dark gradient overlay -->
-        <div class="hero-overlay" aria-hidden="true"></div>
+      <!-- Desktop nav links -->
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#plans">Meal plans</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="about.html" rel="noopener noreferrer">About</a></li>
+        </ul>
+      </nav>
 
-        <!-- Centered content -->
-        <div class="hero-center">
-            <!-- Brand name -->
-            <!-- <img src="./assets/tiffexx-logo.png" alt="tiffexx-logo"> -->
+      <!-- Desktop CTA -->
+      <div class="nav-cta" id="nav-cta">
+        <a href="#plans" class="btn btn-primary" id="nav-view-plans">View plans</a>
+      </div>
 
-            <!-- Main headline -->
-            <!-- <h1 class="hero-headline">Fresh tiffins,<br />delivered daily</h1> -->
+      <!-- Mobile hamburger -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu"
+        aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
 
-            <!-- Subline -->
-            <!-- <p class="hero-subline">
-                Subscribe to homemade meals from trusted local partners —<br />
-                lunch &amp; dinner, right at your door.
-            </p> -->
+    </div>
+  </header>
 
-            <!-- CTA buttons — Google Play & App Store image badges -->
-            <!-- <div class="hero-cta-row"> -->
-                <!-- Google Play badge link -->
-                <!-- <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN" target="_blank"
-                    rel="noopener noreferrer" class="hero-store-btn" id="hero-playstore"
-                    aria-label="Get it on Google Play">
-                    <img src="./assets/playStore-img.avif" alt="Get it on Google Play" class="hero-store-badge-img" />
-                </a> -->
 
-                <!-- App Store badge link -->
-                <!-- <a href="https://apps.apple.com/in/app/tiffexx/id6769454054" target="_blank" rel="noopener noreferrer"
-                    class="hero-store-btn" id="hero-appstore" aria-label="Download on the App Store">
-                    <img src="./assets/appStore-img.avif" alt="Download on the App Store"
-                        class="hero-store-badge-img" />
-                </a>
-            </div> -->
+  <!-- ╔══════════════════ HERO ══════════════════╗ -->
+  <section class="hero" id="hero" aria-label="Hero section">
 
-            <!-- Trust badges -->
-            <!-- <div class="hero-trust" aria-label="Trust indicators">
-                <span>✦ FSSAI Licensed</span>
-                <span class="hero-trust-dot" aria-hidden="true">·</span>
-                <span>✦ Founded 2023</span>
-                <span class="hero-trust-dot" aria-hidden="true">·</span>
-                <span>✦ Home-cooked, always.</span>
-            </div> -->
-        </div>
+    <!-- Background video -->
+    <video class="hero-video" autoplay muted loop playsinline
+      poster="./assets/breakfast_tiffin.png" aria-hidden="true">
+      <source src="./assets/Create_a_second_premium_a.mp4" type="video/mp4" />
+    </video>
 
-        <!-- Scroll down indicator -->
-        <div class="hero-scroll-down" aria-hidden="true">
-            <span>Scroll down</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9" />
-            </svg>
-        </div>
-    </section>
+    <!-- Overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
 
-    <!-- ╔══════════════════ HOW IT WORKS ══════════════════╗ -->
-    <section class="how-it-works section-pad" id="how-it-works" aria-labelledby="hiw-heading">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-eyebrow">Simple &amp; Easy</p>
-                <h2 id="hiw-heading">How Tiffexx works</h2>
-                <p class="section-subtext">Three steps to never worry about meals again.</p>
-            </div>
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">Fresh tiffins · Noida, India</p>
 
-            <div class="steps-grid">
-                <div class="step-card reveal" style="--delay:0s">
-                    <div class="step-num" aria-hidden="true">01</div>
-                    <div class="step-icon-wrap" aria-hidden="true">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="28" fill="#F4B93F" fill-opacity="0.18" />
-                            <rect x="18" y="20" width="28" height="24" rx="4" stroke="#4A1410" stroke-width="2.5" />
-                            <path d="M24 28h16M24 34h10" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round" />
-                            <circle cx="44" cy="20" r="6" fill="#4A1410" />
-                            <path d="M42 20l1.5 1.5L46 18" stroke="#F4B93F" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h3>Choose your plan</h3>
-                    <p>Choose lunch or dinner (or take separate subscriptions for both). Flexible plans to fit your
-                        daily routine.</p>
-                </div>
+      <h1 class="hero-headline">
+        Ghar jaisa khana,<br />
+        <em>delivered daily.</em>
+      </h1>
 
-                <div class="step-connector" aria-hidden="true">
-                    <svg viewBox="0 0 60 24" fill="none">
-                        <path d="M0 12 Q30 2 60 12" stroke="#F4B93F" stroke-width="2.5" stroke-dasharray="6 4"
-                            fill="none" />
-                        <polygon points="56,8 60,12 56,16" fill="#F4B93F" />
-                    </svg>
-                </div>
+      <p class="hero-subline">
+        Subscribe to fresh lunch &amp; dinner tiffins from FSSAI-licensed
+        local kitchens — made every morning, delivered hot to your door.
+      </p>
 
-                <div class="step-card reveal" style="--delay:0.15s">
-                    <div class="step-num" aria-hidden="true">02</div>
-                    <div class="step-icon-wrap" aria-hidden="true">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="28" fill="#F4B93F" fill-opacity="0.18" />
-                            <rect x="16" y="18" width="32" height="30" rx="4" stroke="#4A1410" stroke-width="2.5" />
-                            <path d="M16 26h32" stroke="#4A1410" stroke-width="2.5" />
-                            <rect x="24" y="32" width="6" height="6" rx="1" fill="#F4B93F" />
-                            <rect x="34" y="32" width="6" height="6" rx="1" fill="#4A1410" fill-opacity="0.25" />
-                            <path d="M24 22v-6M40 22v-6" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>Select plan duration</h3>
-                    <p>Choose weekly or monthly subscription cycles that work best for your lifestyle.
-                    </p>
-                </div>
+      <div class="hero-cta-row">
+        <a href="#plans" class="btn btn-gold btn-lg" id="hero-view-plans">View meal plans</a>
+        <a href="#how-it-works" class="btn btn-outline" id="hero-how-it-works"
+          style="color:#fff; border-color:rgba(255,255,255,0.55);">See how it works</a>
+      </div>
 
-                <div class="step-connector" aria-hidden="true">
-                    <svg viewBox="0 0 60 24" fill="none">
-                        <path d="M0 12 Q30 22 60 12" stroke="#F4B93F" stroke-width="2.5" stroke-dasharray="6 4"
-                            fill="none" />
-                        <polygon points="56,8 60,12 56,16" fill="#F4B93F" />
-                    </svg>
-                </div>
-
-                <div class="step-card reveal" style="--delay:0.3s">
-                    <div class="step-num" aria-hidden="true">03</div>
-                    <div class="step-icon-wrap" aria-hidden="true">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="28" fill="#F4B93F" fill-opacity="0.18" />
-                            <rect x="14" y="28" width="36" height="18" rx="4" stroke="#4A1410" stroke-width="2.5" />
-                            <path d="M20 28V24a12 12 0 0124 0v4" stroke="#4A1410" stroke-width="2.5" />
-                            <circle cx="32" cy="37" r="3" fill="#F4B93F" />
-                            <path d="M22 46l-5 5M42 46l5 5" stroke="#4A1410" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>We deliver, you enjoy</h3>
-                    <p>Fresh, hygienic meals arrive at your doorstep every day — hot, on time, and full of home-cooked
-                        love.</p>
-                </div>
-            </div>
-
-            <div class="hiw-cta-wrap reveal" style="--delay:0.4s">
-                <a href="#app" class="btn btn-primary" id="hiw-get-started">🍱 Get Started</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ MEAL CATEGORIES ══════════════════╗ -->
-    <section class="meals section-pad" id="meals" aria-labelledby="meals-heading">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-eyebrow">What we offer</p>
-                <h2 id="meals-heading">Dedicated plans for lunch &amp; dinner</h2>
-                <p class="section-subtext">Take a subscription for lunch, dinner, or both separately — made with care,
-                    delivered with love.</p>
-            </div>
-
-            <div class="meals-grid">
-                <article class="meal-card meal-card-featured reveal" style="--delay:0s" aria-label="Lunch meal option">
-                    <div class="meal-featured-ribbon" aria-label="Most popular">Most popular</div>
-                    <div class="meal-img-wrap">
-                        <img src="./assets/lunch_tiffin.png"
-                            alt="lunch-tiffin.jpg — A hearty Indian lunch tiffin with dal, sabzi, roti, and rice"
-                            class="meal-img" loading="lazy" />
-                        <div class="meal-time-badge">☀️ 12:30 – 2:30 PM</div>
-                    </div>
-                    <div class="meal-card-body">
-                        <h3 class="meal-name">Lunch</h3>
-                        <p class="meal-desc">The full tiffin experience — dal, sabzi, roti, rice, pickle. Balanced,
-                            filling, and tastes just like home.</p>
-                        <a href="#app" class="btn btn-primary" id="lunch-explore">Explore menu →</a>
-                    </div>
-                </article>
-
-                <article class="meal-card reveal" style="--delay:0.15s" aria-label="Dinner meal option">
-                    <div class="meal-img-wrap">
-                        <img src="./assets/dinner_tiffin.png"
-                            alt="dinner-tiffin.jpg — A comforting Indian dinner tiffin with chapati, curry, and rice"
-                            class="meal-img" loading="lazy" />
-                        <div class="meal-time-badge">🌙 7:30 – 9:30 PM</div>
-                    </div>
-                    <div class="meal-card-body">
-                        <h3 class="meal-name">Dinner</h3>
-                        <p class="meal-desc">Wind down with a warm, satisfying dinner — light curries, fresh chapatis,
-                            and seasonal veggies.</p>
-                        <a href="#app" class="btn btn-outline" id="dinner-explore">Explore menu →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ WHY TIFFEXX ══════════════════╗ -->
-    <section class="why section-pad" id="pricing" aria-labelledby="why-heading">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-eyebrow">Why Tiffexx?</p>
-                <h2 id="why-heading">Built for people who love good food</h2>
-            </div>
-
-            <div class="why-grid">
-                <div class="why-card reveal" style="--delay:0s">
-                    <div class="why-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15" />
-                            <path d="M24 10c-7.73 0-14 6.27-14 14s6.27 14 14 14 14-6.27 14-14S31.73 10 24 10z"
-                                stroke="#4A1410" stroke-width="2" />
-                            <path d="M18 24l4 4 8-8" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h3>Home-cooked quality &amp; taste</h3>
-                    <p>Every meal is prepared by trusted local kitchen partners using fresh ingredients — just like your
-                        own kitchen, delivered.</p>
-                </div>
-
-                <div class="why-card reveal" style="--delay:0.1s">
-                    <div class="why-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15" />
-                            <path d="M24 12v4M24 32v4M12 24h4M32 24h4" stroke="#4A1410" stroke-width="2"
-                                stroke-linecap="round" />
-                            <circle cx="24" cy="24" r="8" stroke="#4A1410" stroke-width="2" />
-                            <circle cx="24" cy="24" r="3" fill="#F4B93F" />
-                        </svg>
-                    </div>
-                    <h3>Hygienic &amp; healthy, always</h3>
-                    <p>FSSAI licensed kitchens, strict hygiene standards, and fresh daily preparation — your health is
-                        never compromised.</p>
-                </div>
-
-                <div class="why-card reveal" style="--delay:0.2s">
-                    <div class="why-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15" />
-                            <circle cx="24" cy="24" r="10" stroke="#4A1410" stroke-width="2" />
-                            <path d="M24 16v8l5 3" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round" />
-                            <path d="M34 34l4 4M10 10l4 4" stroke="#F4B93F" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>Pause anytime, no questions asked</h3>
-                    <p>Going home for the weekend? Travelling? Pause your subscription for as long as you need — zero
-                        fuss, zero fees.</p>
-                </div>
-
-                <div class="why-card reveal" style="--delay:0.3s">
-                    <div class="why-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15" />
-                            <rect x="12" y="12" width="24" height="24" rx="3" stroke="#4A1410" stroke-width="2" />
-                            <path d="M12 20h24M20 12v24" stroke="#4A1410" stroke-width="2" />
-                            <rect x="22" y="22" width="6" height="6" rx="1" fill="#F4B93F" />
-                        </svg>
-                    </div>
-                    <h3>Hassle-free meal subscription</h3>
-                    <p>Select your meal plan and sit back. Fresh, home-cooked food arrives on time, every single day.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ TRUSTED LOCAL KITCHENS ══════════════════╗ -->
-    <section class="kitchens-strip section-pad" id="about" aria-labelledby="kitchens-heading">
-        <div class="container kitchens-inner">
-            <div class="kitchens-text reveal">
-                <p class="section-eyebrow eyebrow-light">Our backbone</p>
-                <h2 id="kitchens-heading">Trusted local kitchens</h2>
-                <p>We partner exclusively with vetted, passionate local cooks who treat every tiffin like they're
-                    cooking for family. Every kitchen is FSSAI compliant, inspected for hygiene, and reviewed by real
-                    customers.</p>
-                <ul class="kitchens-list" role="list">
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Fresh ingredients sourced locally, every morning
-                    </li>
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Recipes curated for nutrition and homely taste
-                    </li>
-                    <li>
-                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Real kitchens run by real people in your community
-                    </li>
-                </ul>
-            </div>
-
-            <div class="kitchens-visual reveal reveal-right" aria-hidden="true">
-                <div class="kitchen-illustration">
-                    <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        aria-label="Illustration of a home kitchen cook preparing tiffin" role="img">
-                        <rect width="320" height="280" rx="24" fill="#FFF8EC" />
-                        <!-- shelf -->
-                        <rect x="20" y="60" width="280" height="8" rx="3" fill="#4A1410" fill-opacity="0.12" />
-                        <!-- jars on shelf -->
-                        <rect x="36" y="40" width="18" height="20" rx="4" fill="#F4B93F" fill-opacity="0.6" />
-                        <ellipse cx="45" cy="40" rx="9" ry="4" fill="#F4B93F" />
-                        <rect x="64" y="44" width="14" height="16" rx="3" fill="#C86B2B" fill-opacity="0.5" />
-                        <ellipse cx="71" cy="44" rx="7" ry="3" fill="#C86B2B" fill-opacity="0.7" />
-                        <rect x="88" y="46" width="12" height="14" rx="3" fill="#4A1410" fill-opacity="0.2" />
-                        <!-- Counter -->
-                        <rect x="20" y="196" width="280" height="56" rx="8" fill="#4A1410" fill-opacity="0.09" />
-                        <rect x="20" y="190" width="280" height="10" rx="4" fill="#4A1410" fill-opacity="0.16" />
-                        <!-- Tiffin stack -->
-                        <rect x="48" y="168" width="44" height="11" rx="3" fill="#F4B93F" />
-                        <rect x="48" y="177" width="44" height="11" rx="3" fill="#F4B93F" fill-opacity="0.75" />
-                        <rect x="48" y="186" width="44" height="11" rx="3" fill="#F4B93F" fill-opacity="0.5" />
-                        <rect x="44" y="165" width="52" height="6" rx="3" fill="#4A1410" fill-opacity="0.25" />
-                        <!-- Large pot -->
-                        <ellipse cx="170" cy="190" rx="38" ry="8" fill="#4A1410" fill-opacity="0.18" />
-                        <rect x="132" y="140" width="76" height="50" rx="6" fill="#4A1410" fill-opacity="0.12" />
-                        <rect x="128" y="135" width="84" height="10" rx="4" fill="#4A1410" fill-opacity="0.2" />
-                        <path d="M118 148h16M204 148h16" stroke="#4A1410" stroke-width="3.5" stroke-linecap="round" />
-                        <!-- Steam -->
-                        <path d="M155 130 Q160 118 155 106" stroke="#4A1410" stroke-width="2" stroke-linecap="round"
-                            opacity="0.35" fill="none" />
-                        <path d="M170 126 Q175 114 170 102" stroke="#4A1410" stroke-width="2" stroke-linecap="round"
-                            opacity="0.35" fill="none" />
-                        <path d="M185 130 Q190 118 185 106" stroke="#4A1410" stroke-width="2" stroke-linecap="round"
-                            opacity="0.3" fill="none" />
-                        <!-- Spice bowl -->
-                        <ellipse cx="260" cy="192" rx="22" ry="5" fill="#C86B2B" fill-opacity="0.35" />
-                        <rect x="238" y="168" width="44" height="24" rx="4" fill="#F4B93F" fill-opacity="0.4" />
-                        <!-- Stars -->
-                        <circle cx="64" cy="98" r="4" fill="#F4B93F" opacity="0.7" />
-                        <circle cx="280" cy="110" r="3" fill="#F4B93F" opacity="0.6" />
-                        <circle cx="295" cy="75" r="2.5" fill="#C86B2B" opacity="0.5" />
-                        <!-- Badge -->
-                        <rect x="200" y="36" width="100" height="34" rx="10" fill="#4A1410" />
-                        <text x="250" y="50" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700"
-                            font-size="9" fill="#F4B93F">FSSAI</text>
-                        <text x="250" y="62" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="600"
-                            font-size="8" fill="#F4B93F" fill-opacity="0.8">Licensed Kitchen</text>
-                    </svg>
-                    <div class="kitchen-stat">
-                        <span class="stat-num">100%</span>
-                        <span class="stat-label">Locally sourced</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ ORDER JOURNEY ══════════════════╗ -->
-    <section class="order-journey section-pad" id="order-journey" aria-labelledby="journey-heading">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-eyebrow eyebrow-journey">How it reaches you</p>
-                <h2 id="journey-heading">From kitchen to your door</h2>
-                <p class="section-subtext">Three simple steps — fresh, fast, and hassle-free.</p>
-            </div>
-
-            <div class="journey-track">
-
-                <!-- Step 1 -->
-                <div class="journey-step reveal" style="--delay:0s">
-                    <div class="journey-icon-wrap" aria-hidden="true">
-                        <div class="journey-icon-ring">
-                            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="36" cy="36" r="32" fill="#F4B93F" fill-opacity="0.15" />
-                                <!-- Phone body -->
-                                <rect x="24" y="16" width="24" height="40" rx="5" stroke="#F4B93F" stroke-width="2.5" />
-                                <!-- Screen -->
-                                <rect x="27" y="22" width="18" height="24" rx="2" fill="#F4B93F" fill-opacity="0.2"
-                                    stroke="#F4B93F" stroke-width="1.5" />
-                                <!-- Home button -->
-                                <circle cx="36" cy="51" r="2.5" stroke="#F4B93F" stroke-width="1.5" />
-                                <!-- Tiffin icon on screen -->
-                                <rect x="30" y="26" width="12" height="3" rx="1" fill="#F4B93F" fill-opacity="0.8" />
-                                <rect x="30" y="31" width="12" height="3" rx="1" fill="#F4B93F" fill-opacity="0.5" />
-                                <rect x="30" y="36" width="8" height="3" rx="1" fill="#F4B93F" fill-opacity="0.4" />
-                                <!-- Checkmark badge -->
-                                <circle cx="50" cy="22" r="8" fill="#22C55E" />
-                                <path d="M46.5 22l2.5 2.5 4.5-4.5" stroke="white" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="journey-step-num">01</div>
-                    </div>
-                    <div class="journey-step-body">
-                        <h3>You place the order</h3>
-                        <p>Open the Tiffexx app, pick your plan, and confirm. Your order is instantly sent to your
-                            nearest kitchen partner.</p>
-                    </div>
-                </div>
-
-                <!-- Arrow 1 -->
-                <div class="journey-arrow" aria-hidden="true">
-                    <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 20 Q40 4 76 20" stroke="#F4B93F" stroke-width="2.5" stroke-dasharray="7 5"
-                            fill="none" stroke-linecap="round" />
-                        <polygon points="72,14 80,20 72,26" fill="#F4B93F" />
-                    </svg>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="journey-step reveal" style="--delay:0.15s">
-                    <div class="journey-icon-wrap" aria-hidden="true">
-                        <div class="journey-icon-ring">
-                            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="36" cy="36" r="32" fill="#F4B93F" fill-opacity="0.15" />
-                                <!-- Scooter body -->
-                                <ellipse cx="36" cy="46" rx="6" ry="6" stroke="#F4B93F" stroke-width="2.5" />
-                                <ellipse cx="20" cy="46" rx="6" ry="6" stroke="#F4B93F" stroke-width="2.5" />
-                                <!-- Scooter frame -->
-                                <path d="M26 46 L30 36 L44 36 L42 46" stroke="#F4B93F" stroke-width="2.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M30 36 L28 28 L22 28" stroke="#F4B93F" stroke-width="2"
-                                    stroke-linecap="round" />
-                                <!-- Delivery box on back -->
-                                <rect x="39" y="26" width="16" height="12" rx="3" fill="#F4B93F" fill-opacity="0.3"
-                                    stroke="#F4B93F" stroke-width="2" />
-                                <!-- Tiffexx fork-spoon on box -->
-                                <path d="M44 29 L44 35 M48 29 L48 35" stroke="#F4B93F" stroke-width="1.5"
-                                    stroke-linecap="round" />
-                                <!-- Rider helmet -->
-                                <ellipse cx="27" cy="24" rx="7" ry="6" fill="#F4B93F" fill-opacity="0.25"
-                                    stroke="#F4B93F" stroke-width="2" />
-                                <path d="M22 25 Q25 28 32 25" stroke="#F4B93F" stroke-width="1.5" fill="none"
-                                    stroke-linecap="round" />
-                                <!-- Speed lines -->
-                                <path d="M8 38 L16 38M8 43 L14 43" stroke="#F4B93F" stroke-width="2"
-                                    stroke-linecap="round" opacity="0.5" />
-                            </svg>
-                        </div>
-                        <div class="journey-step-num">02</div>
-                    </div>
-                    <div class="journey-step-body">
-                        <h3>Partner picks from kitchen</h3>
-                        <p>Our delivery partner collects your freshly packed tiffin directly from the kitchen — hot and
-                            ready.</p>
-                    </div>
-                </div>
-
-                <!-- Arrow 2 -->
-                <div class="journey-arrow" aria-hidden="true">
-                    <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 20 Q40 36 76 20" stroke="#F4B93F" stroke-width="2.5" stroke-dasharray="7 5"
-                            fill="none" stroke-linecap="round" />
-                        <polygon points="72,14 80,20 72,26" fill="#F4B93F" />
-                    </svg>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="journey-step reveal" style="--delay:0.3s">
-                    <div class="journey-icon-wrap" aria-hidden="true">
-                        <div class="journey-icon-ring">
-                            <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="36" cy="36" r="32" fill="#F4B93F" fill-opacity="0.15" />
-                                <!-- Door -->
-                                <rect x="20" y="22" width="32" height="38" rx="4" stroke="#F4B93F" stroke-width="2.5" />
-                                <!-- Door handle -->
-                                <circle cx="44" cy="42" r="2.5" fill="#F4B93F" />
-                                <!-- Location pin -->
-                                <circle cx="36" cy="14" r="6" fill="#F4B93F" fill-opacity="0.3" stroke="#F4B93F"
-                                    stroke-width="2" />
-                                <path d="M36 20 L36 26" stroke="#F4B93F" stroke-width="2" stroke-linecap="round" />
-                                <!-- Tiffin box -->
-                                <rect x="26" y="34" width="20" height="14" rx="3" fill="#F4B93F" fill-opacity="0.25"
-                                    stroke="#F4B93F" stroke-width="2" />
-                                <rect x="24" y="32" width="24" height="5" rx="2" fill="#F4B93F" fill-opacity="0.5" />
-                                <!-- Lid handle -->
-                                <rect x="32" y="29" width="8" height="4" rx="2" fill="#F4B93F" />
-                                <!-- Steam wisps -->
-                                <path d="M30 30 Q32 26 30 22" stroke="#F4B93F" stroke-width="1.5" stroke-linecap="round"
-                                    opacity="0.5" fill="none" />
-                                <path d="M36 29 Q38 25 36 21" stroke="#F4B93F" stroke-width="1.5" stroke-linecap="round"
-                                    opacity="0.4" fill="none" />
-                            </svg>
-                        </div>
-                        <div class="journey-step-num">03</div>
-                    </div>
-                    <div class="journey-step-body">
-                        <h3>Tiffin at your doorstep</h3>
-                        <p>Sit back and relax — your warm, home-cooked tiffin arrives right at your door, on time, every
-                            day.</p>
-                    </div>
-                </div>
-
-            </div><!-- /.journey-track -->
-
-            <!-- Guarantee strip -->
-            <div class="journey-guarantee reveal" style="--delay:0.45s">
-                <span class="journey-guarantee-pill">🕐 On-time delivery</span>
-                <span class="journey-guarantee-pill">🔥 Served hot</span>
-                <span class="journey-guarantee-pill">📍 Live tracking on app</span>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ APP DOWNLOAD ══════════════════╗ -->
-    <section class="app-section section-pad" id="app" aria-labelledby="app-heading">
-        <div class="container">
-            <div class="app-download-card reveal">
-
-                <!-- LEFT: Text + badges -->
-                <div class="app-download-left">
-                    <p class="section-eyebrow app-eyebrow">Always in your pocket</p>
-                    <h2 id="app-heading" class="app-download-title">Download the<br>Tiffexx app now!</h2>
-                    <p class="app-subline">Experience seamless tiffin subscription, live tracking, and easy pausing —
-                        only on the Tiffexx app.</p>
-
-                    <!-- Feature chips -->
-                    <div class="app-feature-chips">
-                        <span class="app-chip">📍 Live tracking</span>
-                        <span class="app-chip">⏸️ Pause anytime</span>
-                        <span class="app-chip">🔔 Order alerts</span>
-                    </div>
-
-                    <!-- Store badges -->
-                    <div class="app-store-btns">
-                        <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN" target="_blank"
-                            rel="noopener noreferrer" class="store-img-btn" id="playstore-link"
-                            aria-label="Get it on Google Play Store">
-                            <img src="./assets/playStore-img.avif" alt="Get it on Google Play Store"
-                                class="app-store-badge-img" />
-                        </a>
-                        <a href="https://apps.apple.com/in/app/tiffexx/id6769454054" target="_blank"
-                            rel="noopener noreferrer" class="store-img-btn" id="appstore-link"
-                            aria-label="Download on the App Store">
-                            <img src="./assets/appStore-img.avif" alt="Download on the App Store"
-                                class="app-store-badge-img" />
-                        </a>
-                    </div>
-                </div>
-
-                <!-- RIGHT: Phone with QR on screen -->
-                <div class="app-download-right" aria-label="Phone showing QR code to download Tiffexx app">
-
-                    <!-- Floating decorative badges -->
-                    <div class="app-float-badge app-float-badge--rating" aria-hidden="true">
-                        <span class="float-badge-icon">⭐</span>
-                        <div>
-                            <div class="float-badge-title">4.7★ Rating</div>
-                            <div class="float-badge-sub">10k+ Downloads</div>
-                        </div>
-                    </div>
-
-                    <div class="app-float-badge app-float-badge--users" aria-hidden="true">
-                        <span class="float-badge-icon">🛡️</span>
-                        <div>
-                            <div class="float-badge-title">FSSAI Licensed</div>
-                            <div class="float-badge-sub">Hygienic & trusted</div>
-                        </div>
-                    </div>
-
-                    <!-- Phone frame -->
-                    <div class="app-phone-wrap">
-                        <div class="app-phone-glow" aria-hidden="true"></div>
-                        <div class="app-phone-frame">
-                            <!-- Island notch -->
-                            <div class="app-phone-island" aria-hidden="true"></div>
-
-                            <!-- Screen content -->
-                            <div class="app-phone-screen">
-                                <div class="app-qr-screen">
-                                    <div class="app-qr-logo">
-                                        <span>Tiffexx</span>
-                                    </div>
-                                    <p class="app-qr-label">Scan the QR code to<br>download the app</p>
-                                    <div class="app-qr-frame">
-                                        <img src="./assets/qr-code.jpeg" alt="Scan to download Tiffexx app"
-                                            class="app-qr-img" />
-                                    </div>
-                                    <p class="app-qr-sub">Available on iOS & Android</p>
-                                    <div class="app-qr-stores">
-                                        <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN"
-                                            target="_blank" rel="noopener noreferrer" class="app-qr-store-btn"
-                                            aria-label="Get it on Google Play">
-                                            <svg class="store-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.18 23.76a2 2 0 001.07-.32l10.84-6.27-2.8-2.8-9.11 9.39zm-1.44-20.5A2 2 0 001.5 5v14a2 2 0 00.24.93l9.5-9.5-9.5-9.17zm18.07 8.65l-2.35-1.36-3.13 3.13 3.13 3.14 2.38-1.38a2 2 0 000-3.53zm-16.5 10.57l9.11-9.1-2.8-2.82-6.31 12z" fill="url(#gpGrad)"/>
-                                                <defs>
-                                                    <linearGradient id="gpGrad" x1="0" y1="0" x2="1" y2="1">
-                                                        <stop offset="0%" stop-color="#EA4335"/>
-                                                        <stop offset="33%" stop-color="#FBBC05"/>
-                                                        <stop offset="66%" stop-color="#34A853"/>
-                                                        <stop offset="100%" stop-color="#4285F4"/>
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            <div class="store-btn-text">
-                                                <span class="store-btn-sub">GET IT ON</span>
-                                                <span class="store-btn-name">Google Play</span>
-                                            </div>
-                                        </a>
-                                        <a href="https://apps.apple.com/in/app/tiffexx/id6769454054"
-                                            target="_blank" rel="noopener noreferrer" class="app-qr-store-btn"
-                                            aria-label="Download on the App Store">
-                                            <svg class="store-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="#fff"/>
-                                            </svg>
-                                            <div class="store-btn-text">
-                                                <span class="store-btn-sub">Download on the</span>
-                                                <span class="store-btn-name">App Store</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Home bar -->
-                            <div class="app-phone-bar" aria-hidden="true"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ TESTIMONIALS ══════════════════╗ -->
-    <section class="testimonials section-pad" id="testimonials" aria-labelledby="reviews-heading">
-        <div class="container">
-            <div class="section-header reveal">
-                <p class="section-eyebrow">What people say</p>
-                <h2 id="reviews-heading">Loved by tiffin lovers</h2>
-                <p class="section-subtext">Real experiences from real customers.</p>
-            </div>
-
-            <div class="reviews-grid">
-                <!-- PLACEHOLDER REVIEW 1 — Replace with real customer name, photo, and quote -->
-                <article class="review-card reveal" style="--delay:0s" aria-label="Customer review placeholder 1">
-                    <div class="review-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
-                    <blockquote class="review-text">"Honestly tastes exactly like home. My mom used to make this kind of
-                        dal every week — I can't believe I'm getting it delivered to my hostel. Tiffexx has been a
-                        lifesaver."</blockquote>
-                    <footer class="review-author">
-                        <div class="reviewer-avatar" aria-hidden="true">R</div>
-                        <div>
-                            <p class="reviewer-name">Rahul M.</p>
-                            <p class="reviewer-meta">Subscriber since Jan 2024 · Noida</p>
-                        </div>
-                    </footer>
-                </article>
-
-                <!-- PLACEHOLDER REVIEW 2 — Replace with real customer name, photo, and quote -->
-                <article class="review-card review-card-featured reveal" style="--delay:0.15s"
-                    aria-label="Customer review placeholder 2">
-                    <div class="review-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
-                    <blockquote class="review-text">"The best decision I made this year. I used to order junk food every
-                        day and now I get fresh, healthy tiffin. The pause feature is brilliant — used it when I went
-                        home for Diwali."</blockquote>
-                    <footer class="review-author">
-                        <div class="reviewer-avatar avatar-2" aria-hidden="true">P</div>
-                        <div>
-                            <p class="reviewer-name">Priya S.</p>
-                            <p class="reviewer-meta">Subscribed to Lunch &amp; Dinner plans · Working professional</p>
-                        </div>
-                    </footer>
-                </article>
-
-                <!-- PLACEHOLDER REVIEW 3 — Replace with real customer name, photo, and quote -->
-                <article class="review-card reveal" style="--delay:0.3s" aria-label="Customer review placeholder 3">
-                    <div class="review-stars" aria-label="4 out of 5 stars" role="img">★★★★☆</div>
-                    <blockquote class="review-text">"Delivery is always on time, the food is hygienic, and the portion
-                        sizes are generous. Exactly what I was looking for — clean, affordable, daily home food."
-                    </blockquote>
-                    <footer class="review-author">
-                        <div class="reviewer-avatar avatar-3" aria-hidden="true">A</div>
-                        <div>
-                            <p class="reviewer-name">Amit K.</p>
-                            <p class="reviewer-meta">Lunch &amp; Dinner plan subscriber · Student, Noida</p>
-                        </div>
-                    </footer>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ╔══════════════════ FINAL CTA BANNER ══════════════════╗ -->
-    <!-- <section class="final-cta" aria-labelledby="final-cta-heading">
-        <div class="container final-cta-inner reveal">
-            <div class="final-cta-emoji" aria-hidden="true">🍱</div>
-            <h2 id="final-cta-heading">Ready for your first tiffin?</h2>
-            <p>Join thousands of happy subscribers enjoying home-cooked meals every single day.</p>
-            <a href="#app" class="btn btn-primary btn-lg btn-invert" id="final-getstarted">Get Started — It's Easy</a>
-            <p class="final-cta-sub">No commitment. Pause or cancel anytime.</p>
-        </div>
-    </section> -->
-
-    <!-- ╔══════════════════ FOOTER ══════════════════╗ -->
-    <footer class="footer" id="footer" role="contentinfo">
-        <div class="container footer-grid">
-
-            <div class="footer-brand">
-                <a href="#" class="footer-logo-link" aria-label="Tiffexx Home">
-                    <img src="./assets/tiffexx-logo.png" alt="Tiffexx" class="footer-logo-img" />
-                </a>
-                <p class="footer-tagline">Order. Eat. Repeat.</p>
-                <p class="footer-fssai">FSSAI Lic. No. 12724999000697</p>
-                <p class="footer-copy">© 2026 Tiffexx. Noida, India.</p>
-
-                <div class="footer-app-badges">
-                    <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN" target="_blank"
-                        rel="noopener noreferrer" class="footer-badge-link" id="footer-playstore"
-                        aria-label="Get it on Google Play">
-                        <img src="./assets/playStore-img.avif" alt="Get it on Google Play" class="footer-badge-img" />
-                    </a>
-                    <a href="https://apps.apple.com/in/app/tiffexx/id6769454054" target="_blank"
-                        rel="noopener noreferrer" class="footer-badge-link" id="footer-appstore"
-                        aria-label="Download on the App Store">
-                        <img src="./assets/appStore-img.avif" alt="Download on the App Store"
-                            class="footer-badge-img" />
-                    </a>
-                </div>
-            </div>
-
-            <nav class="footer-nav" aria-label="Footer navigation">
-                <div class="footer-nav-col">
-                    <h4>Product</h4>
-                    <a href="#how-it-works">How it works</a>
-                    <a href="#meals">Meal plans</a>
-                    <a href="#app">Get the app</a>
-                </div>
-                <div class="footer-nav-col">
-                    <h4>Company</h4>
-                    <a href="about.html" rel="noopener noreferrer">About Tiffexx</a>
-                    <a href="about.html#partner-heading" rel="noopener noreferrer">Kitchen partners</a>
-                    <a href="#">Blog</a>
-                </div>
-                <div class="footer-nav-col">
-                    <h4>Legal</h4>
-                    <a href="privacy.html" rel="noopener noreferrer">Privacy policy</a>
-                    <a href="terms.html">Terms of service</a>
-                    <a href="about.html#contact" rel="noopener noreferrer">Contact us</a>
-                </div>
-            </nav>
-
-            <div class="footer-social">
-                <h4>Follow us</h4>
-                <div class="social-icons" role="list">
-                    <!-- PLACEHOLDER: Replace href="#" with real social media URLs -->
-                    <a href="https://www.instagram.com/tiffexx.com_?igsh=NDgzaXIwbHMwcnF2" target="_blank"
-                        class="social-icon" aria-label="Instagram (placeholder)" role="listitem">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.facebook.com/p/Tiffexx-61584848297200/" target="_blank" class="social-icon"
-                        aria-label="Facebook (placeholder)" role="listitem">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/919217049217" target="_blank" class="social-icon" aria-label="WhatsApp"
-                        role="listitem">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ╔══════════════════ MOBILE STICKY BOTTOM BAR ══════════════════╗ -->
-    <div class="mobile-cta-bar" id="mobile-cta-bar" aria-label="Mobile sticky call to action">
-        <a href="#" class="btn btn-primary btn-full" id="mobile-getstarted">🍱 Get Started</a>
+      <!-- Trust row -->
+      <div class="hero-trust" aria-label="Trust indicators">
+        <span class="hero-trust-item">
+          <!-- shield-check icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          FSSAI Licensed
+        </span>
+        <span class="hero-trust-sep" aria-hidden="true"></span>
+        <span class="hero-trust-item">
+          <!-- flame icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+          </svg>
+          Freshly cooked
+        </span>
+        <span class="hero-trust-sep" aria-hidden="true"></span>
+        <span class="hero-trust-item">
+          <!-- pause icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="4" width="4" height="16"/>
+            <rect x="14" y="4" width="4" height="16"/>
+          </svg>
+          Pause anytime
+        </span>
+      </div>
     </div>
 
-    <script>
-        // ── Scroll-reveal ─────────────────────────────────────────────────────────
-        const revealEls = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const el = entry.target;
-                    const delay = el.style.getPropertyValue('--delay') || '0s';
-                    el.style.transitionDelay = delay;
-                    el.classList.add('revealed');
-                    revealObserver.unobserve(el);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        revealEls.forEach((el) => revealObserver.observe(el));
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+  </section>
 
-        // ── Nav shadow on scroll ───────────────────────────────────────────────────
-        const nav = document.getElementById('main-nav');
-        if (nav) {
-            window.addEventListener('scroll', () => {
-                nav.classList.toggle('nav-scrolled', window.scrollY > 20);
-            }, { passive: true });
+
+  <!-- ╔══════════════════ MEAL PLANS ══════════════════╗ -->
+  <section class="plans section-pad" id="plans" aria-labelledby="plans-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">What we offer</p>
+        <h2 id="plans-heading">Dedicated plans for lunch &amp; dinner</h2>
+        <p class="section-sub">Subscribe to lunch, dinner, or both separately — made with care, delivered with love.</p>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- Lunch card (featured / most popular) -->
+        <article class="plan-card plan-card--featured reveal" style="--delay:0s" aria-label="Lunch subscription plan">
+          <span class="plan-ribbon">Most popular</span>
+
+          <div class="plan-img-wrap">
+            <img src="./assets/lunch_tiffin.png"
+              alt="A hearty Indian lunch tiffin with dal, sabzi, roti, and rice"
+              class="plan-img" loading="lazy" />
+            <div class="plan-time-badge" aria-label="Delivery window: 12:30 PM to 2:30 PM">
+              <!-- sun icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+              12:30 – 2:30 PM
+            </div>
+          </div>
+
+          <div class="plan-body">
+            <h3 class="plan-name">Lunch</h3>
+            <p class="plan-desc">The full tiffin experience — dal, sabzi, roti, rice, pickle. Balanced, filling, and tastes just like home.</p>
+            <div class="plan-action">
+              <a href="#app" class="btn btn-primary btn-full" id="lunch-get-started">Get started</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dinner card -->
+        <article class="plan-card reveal" style="--delay:0.12s" aria-label="Dinner subscription plan">
+
+          <div class="plan-img-wrap">
+            <img src="./assets/dinner_tiffin.png"
+              alt="A comforting Indian dinner tiffin with chapati, curry, and seasonal vegetables"
+              class="plan-img" loading="lazy" />
+            <div class="plan-time-badge" aria-label="Delivery window: 7:30 PM to 9:30 PM">
+              <!-- moon icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+              </svg>
+              7:30 – 9:30 PM
+            </div>
+          </div>
+
+          <div class="plan-body">
+            <h3 class="plan-name">Dinner</h3>
+            <p class="plan-desc">Wind down with a warm, satisfying dinner — light curries, fresh chapatis, and seasonal vegetables.</p>
+            <div class="plan-action">
+              <a href="#app" class="btn btn-outline btn-full" id="dinner-get-started">Get started</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════ HOW IT WORKS (merged) ══════════════════╗ -->
+  <section class="how-it-works section-pad" id="how-it-works" aria-labelledby="hiw-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Simple &amp; easy</p>
+        <h2 id="hiw-heading">Three steps to never worry about meals again</h2>
+      </div>
+
+      <div class="steps-row">
+
+        <!-- Step 1 -->
+        <div class="step-card reveal" style="--delay:0s">
+          <p class="step-num">Step 01</p>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" fill="#F4B93F" fill-opacity="0.18"/>
+              <rect x="18" y="20" width="28" height="24" rx="4" stroke="#4A1410" stroke-width="2.5"/>
+              <path d="M24 28h16M24 34h10" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="44" cy="20" r="6" fill="#4A1410"/>
+              <path d="M42 20l1.5 1.5L46 18" stroke="#F4B93F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Choose your plan</h3>
+          <p>Pick lunch, dinner, or both. Choose a weekly or monthly cycle that fits your routine.</p>
+        </div>
+
+        <!-- Connector -->
+        <div class="step-connector" aria-hidden="true">
+          <svg viewBox="0 0 36 20" fill="none">
+            <path d="M0 10 Q18 2 36 10" stroke="#D4920A" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
+            <polygon points="32,6 36,10 32,14" fill="#D4920A"/>
+          </svg>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card reveal" style="--delay:0.12s">
+          <p class="step-num">Step 02</p>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" fill="#F4B93F" fill-opacity="0.18"/>
+              <rect x="16" y="18" width="32" height="30" rx="4" stroke="#4A1410" stroke-width="2.5"/>
+              <path d="M16 26h32" stroke="#4A1410" stroke-width="2.5"/>
+              <rect x="24" y="32" width="6" height="6" rx="1" fill="#F4B93F"/>
+              <rect x="34" y="32" width="6" height="6" rx="1" fill="#4A1410" fill-opacity="0.25"/>
+              <path d="M24 22v-6M40 22v-6" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>We cook fresh daily</h3>
+          <p>Our kitchen partners prepare your tiffin fresh every morning using locally sourced ingredients.</p>
+        </div>
+
+        <!-- Connector -->
+        <div class="step-connector" aria-hidden="true">
+          <svg viewBox="0 0 36 20" fill="none">
+            <path d="M0 10 Q18 18 36 10" stroke="#D4920A" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
+            <polygon points="32,6 36,10 32,14" fill="#D4920A"/>
+          </svg>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card reveal" style="--delay:0.24s">
+          <p class="step-num">Step 03</p>
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" fill="#F4B93F" fill-opacity="0.18"/>
+              <rect x="14" y="28" width="36" height="18" rx="4" stroke="#4A1410" stroke-width="2.5"/>
+              <path d="M20 28V24a12 12 0 0124 0v4" stroke="#4A1410" stroke-width="2.5"/>
+              <circle cx="32" cy="37" r="3" fill="#F4B93F"/>
+              <path d="M22 46l-5 5M42 46l5 5" stroke="#4A1410" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Delivered to your door</h3>
+          <p>Fresh, hot tiffin arrives on time, every day. Track it live in the app and pause whenever you need.</p>
+        </div>
+
+      </div>
+
+      <!-- Guarantee pills -->
+      <div class="guarantee-strip reveal" style="--delay:0.36s" aria-label="Delivery guarantees">
+        <span class="guarantee-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          On-time delivery
+        </span>
+        <span class="guarantee-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+          </svg>
+          Served hot
+        </span>
+        <span class="guarantee-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Live tracking on app
+        </span>
+      </div>
+
+      <div class="hiw-cta reveal" style="--delay:0.44s">
+        <a href="#plans" class="btn btn-primary btn-lg" id="hiw-view-plans">View meal plans</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════ WHY TIFFEXX ══════════════════╗ -->
+  <section class="why section-pad" id="why" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Why Tiffexx?</p>
+        <h2 id="why-heading">Built for people who love good food</h2>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card reveal" style="--delay:0s">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15"/>
+              <path d="M24 10c-7.73 0-14 6.27-14 14s6.27 14 14 14 14-6.27 14-14S31.73 10 24 10z" stroke="#4A1410" stroke-width="2"/>
+              <path d="M18 24l4 4 8-8" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Home-cooked quality &amp; taste</h3>
+          <p>Every meal is prepared by trusted local kitchen partners using fresh ingredients — just like your own kitchen, delivered.</p>
+        </div>
+
+        <div class="why-card reveal" style="--delay:0.08s">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15"/>
+              <path d="M24 12v4M24 32v4M12 24h4M32 24h4" stroke="#4A1410" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="8" stroke="#4A1410" stroke-width="2"/>
+              <circle cx="24" cy="24" r="3" fill="#F4B93F"/>
+            </svg>
+          </div>
+          <h3>Hygienic &amp; healthy, always</h3>
+          <p>FSSAI licensed kitchens, strict hygiene standards, and fresh daily preparation — your health is never compromised.</p>
+        </div>
+
+        <div class="why-card reveal" style="--delay:0.16s">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15"/>
+              <circle cx="24" cy="24" r="10" stroke="#4A1410" stroke-width="2"/>
+              <path d="M24 16v8l5 3" stroke="#4A1410" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M34 34l4 4M10 10l4 4" stroke="#F4B93F" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Pause anytime, no questions asked</h3>
+          <p>Travelling or going home for the weekend? Pause your subscription for as long as you need — zero fuss, zero fees.</p>
+        </div>
+
+        <div class="why-card reveal" style="--delay:0.24s">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" fill="#F4B93F" fill-opacity="0.15"/>
+              <rect x="12" y="12" width="24" height="24" rx="3" stroke="#4A1410" stroke-width="2"/>
+              <path d="M12 20h24M20 12v24" stroke="#4A1410" stroke-width="2"/>
+              <rect x="22" y="22" width="6" height="6" rx="1" fill="#F4B93F"/>
+            </svg>
+          </div>
+          <h3>Hassle-free subscription</h3>
+          <p>Select your plan and sit back. Fresh, home-cooked food arrives on time, every single day. Weekly or monthly — your choice.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════ TRUSTED LOCAL KITCHENS ══════════════════╗ -->
+  <section class="kitchens section-pad" id="about" aria-labelledby="kitchens-heading">
+    <div class="container kitchens-inner">
+
+      <div class="kitchens-text reveal">
+        <p class="eyebrow" style="color:var(--c-gold-vivid);">Our backbone</p>
+        <h2 id="kitchens-heading">Trusted local kitchens</h2>
+        <p>We partner exclusively with vetted, passionate local cooks who treat every tiffin like they're cooking for family. Every kitchen is FSSAI compliant, inspected for hygiene, and reviewed by real customers.</p>
+        <ul class="kitchens-list" role="list">
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Fresh ingredients sourced locally, every morning
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Recipes curated for nutrition and homely taste
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Real kitchens run by real people in your community
+          </li>
+        </ul>
+      </div>
+
+      <div class="kitchen-visual reveal reveal-right" aria-hidden="true">
+        <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a home kitchen cook preparing tiffin">
+          <rect width="320" height="280" rx="24" fill="#FFF8EC"/>
+          <rect x="20" y="60" width="280" height="8" rx="3" fill="#4A1410" fill-opacity="0.12"/>
+          <rect x="36" y="40" width="18" height="20" rx="4" fill="#F4B93F" fill-opacity="0.6"/>
+          <ellipse cx="45" cy="40" rx="9" ry="4" fill="#F4B93F"/>
+          <rect x="64" y="44" width="14" height="16" rx="3" fill="#C86B2B" fill-opacity="0.5"/>
+          <ellipse cx="71" cy="44" rx="7" ry="3" fill="#C86B2B" fill-opacity="0.7"/>
+          <rect x="88" y="46" width="12" height="14" rx="3" fill="#4A1410" fill-opacity="0.2"/>
+          <rect x="20" y="196" width="280" height="56" rx="8" fill="#4A1410" fill-opacity="0.09"/>
+          <rect x="20" y="190" width="280" height="10" rx="4" fill="#4A1410" fill-opacity="0.16"/>
+          <rect x="48" y="168" width="44" height="11" rx="3" fill="#F4B93F"/>
+          <rect x="48" y="177" width="44" height="11" rx="3" fill="#F4B93F" fill-opacity="0.75"/>
+          <rect x="48" y="186" width="44" height="11" rx="3" fill="#F4B93F" fill-opacity="0.5"/>
+          <rect x="44" y="165" width="52" height="6" rx="3" fill="#4A1410" fill-opacity="0.25"/>
+          <ellipse cx="170" cy="190" rx="38" ry="8" fill="#4A1410" fill-opacity="0.18"/>
+          <rect x="132" y="140" width="76" height="50" rx="6" fill="#4A1410" fill-opacity="0.12"/>
+          <rect x="128" y="135" width="84" height="10" rx="4" fill="#4A1410" fill-opacity="0.2"/>
+          <path d="M118 148h16M204 148h16" stroke="#4A1410" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M155 130 Q160 118 155 106" stroke="#4A1410" stroke-width="2" stroke-linecap="round" opacity="0.35" fill="none"/>
+          <path d="M170 126 Q175 114 170 102" stroke="#4A1410" stroke-width="2" stroke-linecap="round" opacity="0.35" fill="none"/>
+          <path d="M185 130 Q190 118 185 106" stroke="#4A1410" stroke-width="2" stroke-linecap="round" opacity="0.3" fill="none"/>
+          <ellipse cx="260" cy="192" rx="22" ry="5" fill="#C86B2B" fill-opacity="0.35"/>
+          <rect x="238" y="168" width="44" height="24" rx="4" fill="#F4B93F" fill-opacity="0.4"/>
+          <circle cx="64" cy="98" r="4" fill="#F4B93F" opacity="0.7"/>
+          <circle cx="280" cy="110" r="3" fill="#F4B93F" opacity="0.6"/>
+          <circle cx="295" cy="75" r="2.5" fill="#C86B2B" opacity="0.5"/>
+          <rect x="200" y="36" width="100" height="34" rx="10" fill="#4A1410"/>
+          <text x="250" y="50" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="9" fill="#F4B93F">FSSAI</text>
+          <text x="250" y="62" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="600" font-size="8" fill="#F4B93F" fill-opacity="0.8">Licensed Kitchen</text>
+        </svg>
+        <div class="kitchen-stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Locally sourced</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════ TESTIMONIALS ══════════════════╗ -->
+  <section class="testimonials section-pad" id="testimonials" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">What people say</p>
+        <h2 id="reviews-heading">Loved by tiffin lovers</h2>
+        <p class="section-sub">Real experiences from real customers in Noida.</p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card reveal" style="--delay:0s" aria-label="Review by Rahul M.">
+          <div class="review-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+          <blockquote class="review-text">"Honestly tastes exactly like home. My mom used to make this kind of dal every week — I can't believe I'm getting it delivered to my hostel. Tiffexx has been a lifesaver."</blockquote>
+          <footer class="review-author">
+            <div class="reviewer-avatar avatar-a" aria-hidden="true">R</div>
+            <div>
+              <p class="reviewer-name">Rahul M.</p>
+              <p class="reviewer-meta">Subscriber since Jan 2024 · Noida</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review-card review-card--featured reveal" style="--delay:0.12s" aria-label="Review by Priya S.">
+          <div class="review-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+          <blockquote class="review-text">"The best decision I made this year. I used to order junk food every day and now I get fresh, healthy tiffin. The pause feature is brilliant — used it when I went home for Diwali."</blockquote>
+          <footer class="review-author">
+            <div class="reviewer-avatar avatar-b" aria-hidden="true">P</div>
+            <div>
+              <p class="reviewer-name">Priya S.</p>
+              <p class="reviewer-meta">Lunch &amp; Dinner subscriber · Working professional</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review-card reveal" style="--delay:0.24s" aria-label="Review by Amit K.">
+          <div class="review-stars" aria-label="4 out of 5 stars" role="img">★★★★☆</div>
+          <blockquote class="review-text">"Delivery is always on time, the food is hygienic, and the portion sizes are generous. Exactly what I was looking for — clean, affordable, daily home food."</blockquote>
+          <footer class="review-author">
+            <div class="reviewer-avatar avatar-c" aria-hidden="true">A</div>
+            <div>
+              <p class="reviewer-name">Amit K.</p>
+              <p class="reviewer-meta">Lunch &amp; Dinner plan subscriber · Student, Noida</p>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════ APP DOWNLOAD ══════════════════╗ -->
+  <section class="app-section" id="app" aria-labelledby="app-heading">
+    <div class="container">
+      <div class="app-card reveal">
+
+        <!-- Left: text + badges -->
+        <div class="app-left">
+          <p class="eyebrow">Always in your pocket</p>
+          <h2 id="app-heading" class="app-title">Download the<br />Tiffexx app</h2>
+          <p class="app-sub">Live tracking, easy pausing, order alerts — the full experience is only on the app.</p>
+
+          <div class="app-chips" aria-label="App features">
+            <span class="app-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              Live tracking
+            </span>
+            <span class="app-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+              </svg>
+              Pause anytime
+            </span>
+            <span class="app-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/>
+              </svg>
+              Order alerts
+            </span>
+          </div>
+
+          <div class="app-store-btns">
+            <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN" target="_blank"
+              rel="noopener noreferrer" class="store-badge-link" id="playstore-link"
+              aria-label="Get Tiffexx on Google Play Store">
+              <img src="./assets/playStore-img.avif" alt="Get it on Google Play" class="store-badge-img" />
+            </a>
+            <a href="https://apps.apple.com/in/app/tiffexx/id6769454054" target="_blank"
+              rel="noopener noreferrer" class="store-badge-link" id="appstore-link"
+              aria-label="Download Tiffexx on the App Store">
+              <img src="./assets/appStore-img.avif" alt="Download on the App Store" class="store-badge-img" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: phone mock with QR -->
+        <div class="app-right" aria-label="Phone showing QR code to download the Tiffexx app">
+
+          <!-- Floating badges -->
+          <div class="app-float-badge app-float-badge--a" aria-hidden="true">
+            <div class="float-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="float-badge-title">4.7 Rating</div>
+              <div class="float-badge-sub">10k+ Downloads</div>
+            </div>
+          </div>
+
+          <div class="app-float-badge app-float-badge--b" aria-hidden="true">
+            <div class="float-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="float-badge-title">FSSAI Licensed</div>
+              <div class="float-badge-sub">Hygienic &amp; trusted</div>
+            </div>
+          </div>
+
+          <!-- Phone frame -->
+          <div class="phone-wrap">
+            <div class="phone-glow" aria-hidden="true"></div>
+            <div class="phone-frame">
+              <div class="phone-island" aria-hidden="true"></div>
+              <div class="phone-screen">
+                <div class="qr-screen">
+                  <div class="qr-logo">Tiffexx</div>
+                  <p class="qr-label">Scan to download the app</p>
+                  <div class="qr-frame">
+                    <img src="./assets/qr-code.jpeg" alt="QR code — scan to download the Tiffexx app" class="qr-img" />
+                  </div>
+                  <p class="qr-sub">Available on iOS &amp; Android</p>
+                  <div class="qr-stores">
+                    <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN"
+                      target="_blank" rel="noopener noreferrer" class="qr-store-btn"
+                      aria-label="Get it on Google Play">
+                      <svg class="s-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M3.18 23.76a2 2 0 001.07-.32l10.84-6.27-2.8-2.8-9.11 9.39zm-1.44-20.5A2 2 0 001.5 5v14a2 2 0 00.24.93l9.5-9.5-9.5-9.17zm18.07 8.65l-2.35-1.36-3.13 3.13 3.13 3.14 2.38-1.38a2 2 0 000-3.53zm-16.5 10.57l9.11-9.1-2.8-2.82-6.31 12z" fill="url(#gp1)"/>
+                        <defs>
+                          <linearGradient id="gp1" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#EA4335"/>
+                            <stop offset="33%" stop-color="#FBBC05"/>
+                            <stop offset="66%" stop-color="#34A853"/>
+                            <stop offset="100%" stop-color="#4285F4"/>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div class="s-btn-text">
+                        <span class="s-btn-sub">GET IT ON</span>
+                        <span class="s-btn-name">Google Play</span>
+                      </div>
+                    </a>
+                    <a href="https://apps.apple.com/in/app/tiffexx/id6769454054"
+                      target="_blank" rel="noopener noreferrer" class="qr-store-btn"
+                      aria-label="Download on the App Store">
+                      <svg class="s-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="#fff"/>
+                      </svg>
+                      <div class="s-btn-text">
+                        <span class="s-btn-sub">Download on the</span>
+                        <span class="s-btn-name">App Store</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-bar" aria-hidden="true"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════ FOOTER ══════════════════╗ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div>
+          <a href="#" aria-label="Tiffexx — back to top">
+            <img src="./assets/tiffexx-logo.png" alt="Tiffexx" class="footer-brand-logo" />
+          </a>
+          <p class="footer-tagline">Order. Eat. Repeat.</p>
+          <p class="footer-fssai">FSSAI Lic. No. 12724999000697</p>
+
+          <div class="footer-store-btns">
+            <a href="https://play.google.com/store/search?q=tiffexx&c=apps&hl=en_IN"
+              target="_blank" rel="noopener noreferrer" class="footer-store-link" id="footer-playstore"
+              aria-label="Get Tiffexx on Google Play">
+              <img src="./assets/playStore-img.avif" alt="Get it on Google Play" class="footer-store-img" />
+            </a>
+            <a href="https://apps.apple.com/in/app/tiffexx/id6769454054"
+              target="_blank" rel="noopener noreferrer" class="footer-store-link" id="footer-appstore"
+              aria-label="Download Tiffexx on the App Store">
+              <img src="./assets/appStore-img.avif" alt="Download on the App Store" class="footer-store-img" />
+            </a>
+          </div>
+
+          <div>
+            <p class="footer-social-label">Follow us</p>
+            <div class="footer-social-icons" role="list">
+              <a href="https://www.instagram.com/tiffexx.com_?igsh=NDgzaXIwbHMwcnF2"
+                target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                aria-label="Follow Tiffexx on Instagram" role="listitem">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/p/Tiffexx-61584848297200/"
+                target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                aria-label="Follow Tiffexx on Facebook" role="listitem">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/919217049217"
+                target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                aria-label="Contact Tiffexx on WhatsApp" role="listitem">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product -->
+        <nav class="footer-nav-col" aria-label="Product links">
+          <h4>Product</h4>
+          <a href="#how-it-works">How it works</a>
+          <a href="#plans">Meal plans</a>
+          <a href="#app">Get the app</a>
+          <a href="#testimonials">Reviews</a>
+        </nav>
+
+        <!-- Company -->
+        <nav class="footer-nav-col" aria-label="Company links">
+          <h4>Company</h4>
+          <a href="about.html" rel="noopener noreferrer">About Tiffexx</a>
+          <a href="about.html#partner-heading" rel="noopener noreferrer">Kitchen partners</a>
+          <a href="about.html#contact" rel="noopener noreferrer">Contact us</a>
+        </nav>
+
+        <!-- Legal -->
+        <nav class="footer-nav-col" aria-label="Legal links">
+          <h4>Legal</h4>
+          <a href="privacy.html" rel="noopener noreferrer">Privacy policy</a>
+          <a href="terms.html">Terms of service</a>
+        </nav>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Tiffexx. Noida, India.</p>
+        <div class="footer-legal" aria-label="Legal links">
+          <a href="privacy.html" rel="noopener noreferrer">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ╔══════════════════ MOBILE STICKY BAR ══════════════════╗ -->
+  <div class="mobile-cta-bar" id="mobile-cta-bar" aria-label="Mobile quick action">
+    <a href="#plans" class="btn btn-primary btn-full" id="mobile-view-plans">View meal plans</a>
+  </div>
+
+
+  <script>
+    // ── Reveal on scroll ──────────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (!isIntersecting) return;
+        const delay = target.style.getPropertyValue('--delay') || '0s';
+        target.style.transitionDelay = delay;
+        target.classList.add('revealed');
+        revealObs.unobserve(target);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── Nav: shadow on scroll ────────────────────────────────────────
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // ── Mobile hamburger ────────────────────────────────────────────
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    const navCta    = document.getElementById('nav-cta');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      navLinks.classList.toggle('mobile-open', isOpen);
+      navCta.classList.toggle('mobile-open', isOpen);
+    });
+
+    // Close menu when a nav link is clicked
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('mobile-open');
+        navCta.classList.remove('mobile-open');
+      });
+    });
+
+    // ── Smooth scroll ───────────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const navHeight = document.getElementById('main-nav').offsetHeight;
+          const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 8;
+          window.scrollTo({ top, behavior: 'smooth' });
         }
+      });
+    });
 
-        // ── Smooth scroll ─────────────────────────────────────────────────────────
-        document.querySelectorAll('a[href^="#"]').forEach((link) => {
-            link.addEventListener('click', (e) => {
-                const href = link.getAttribute('href');
-                if (href === '#') return;
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    const top = target.getBoundingClientRect().top + window.scrollY - 20;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-            });
-        });
+    // ── Hide mobile CTA near footer ─────────────────────────────────
+    const mobileCta = document.getElementById('mobile-cta-bar');
+    const footer = document.getElementById('footer');
+    new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        mobileCta.style.opacity       = e.isIntersecting ? '0' : '1';
+        mobileCta.style.pointerEvents = e.isIntersecting ? 'none' : 'auto';
+        mobileCta.style.transform     = e.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+      });
+    }, { threshold: 0.05 }).observe(footer);
+  </script>
 
-        // ── Hide mobile CTA bar near footer ───────────────────────────────────────
-        const mobileCta = document.getElementById('mobile-cta-bar');
-        const footer = document.getElementById('footer');
-        const footerObs = new IntersectionObserver((entries) => {
-            entries.forEach((e) => {
-                mobileCta.style.opacity = e.isIntersecting ? '0' : '1';
-                mobileCta.style.pointerEvents = e.isIntersecting ? 'none' : 'auto';
-                mobileCta.style.transform = e.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
-            });
-        }, { threshold: 0.05 });
-        footerObs.observe(footer);
-    </script>
 </body>
-
 </html>
