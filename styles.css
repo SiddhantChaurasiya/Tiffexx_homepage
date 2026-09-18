@@ -574,7 +574,7 @@ svg { display: block; }
   position: relative;
   background: var(--tx-maroon-deep);
   overflow: hidden;
-  padding-block: clamp(60px, 8vw, 104px);
+  padding-block: clamp(72px, 11vh, 132px);
 }
 
 .browse-meal-grain {
@@ -587,6 +587,31 @@ svg { display: block; }
 
 .browse-meal-top-slash { top: 0; background: linear-gradient(115deg, var(--tx-cream) 48%, transparent 48.6%); }
 .browse-meal-bottom-slash { bottom: 0; background: linear-gradient(115deg, transparent 48%, var(--tx-maroon) 48.6%); }
+
+.video-showcase-wrapper {
+  position: relative;
+  z-index: 1;
+  width: min(90%, 1320px);
+  margin-inline: auto;
+}
+
+.video-showcase-frame {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(255, 248, 236, 0.14);
+  border-radius: clamp(24px, 2.2vw, 32px);
+  background: var(--tx-maroon);
+  box-shadow:
+    0 24px 60px -30px rgba(0, 0, 0, 0.7),
+    0 8px 24px -16px rgba(245, 197, 24, 0.18);
+}
+
+.video-showcase-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .browse-meal-container { position: relative; z-index: 1; }
 
@@ -847,10 +872,32 @@ svg { display: block; }
   font-style: italic;
 }
 
+@media (max-width: 900px) {
+  .browse-meal {
+    padding-block: clamp(56px, 8vh, 88px);
+  }
+
+  .video-showcase-wrapper {
+    width: min(92%, 1120px);
+  }
+}
+
 @media (max-width: 640px) {
   .browse-meal-header-row { flex-direction: column; align-items: flex-start; }
   .browse-meal-header-aside { text-align: left; }
   .meal-tab-time { display: none; }
+
+  .browse-meal {
+    padding-block: clamp(40px, 6vh, 64px);
+  }
+
+  .video-showcase-wrapper {
+    width: 92%;
+  }
+
+  .video-showcase-frame {
+    border-radius: clamp(16px, 4vw, 20px);
+  }
 }
 
 
@@ -1449,84 +1496,16 @@ svg { display: block; }
    ══════════════════════════════════════════════════════════════════════ */
 .app-section {
   background: #f2eada;
-  padding: clamp(34px, 5vw, 72px) 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
 
-.app-section > .container { display: none; }
-
-.app-download-stage {
-  width: min(100%, 1440px);
-  margin: 0 auto;
-  aspect-ratio: 1440 / 680;
-  min-height: 560px;
-  opacity: 1; transform: translateY(0);
-  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
-}
-
-.app-download-panel {
-  position: relative;
-  width: calc(100% - 58px);
-  height: calc(100% - 56px);
-  margin: 28px auto;
-  border-radius: 43px;
-  background: #591a11;
-  overflow: hidden;
-}
-
-.app-download-copy { position: absolute; left: 10.1%; top: 24%; width: 31%; z-index: 2; color: #f2eada; }
-.app-download-eyebrow { margin-bottom: 12px; color: #d9a319; font: 600 clamp(0.75rem, 1.34vw, 1.2rem)/1.1 var(--font-display); text-transform: uppercase; }
-.app-download-title { color: #f2eada; font: 700 clamp(2rem, 3.35vw, 3rem)/1.02 var(--font-display); }
-.app-download-title strong { color: #fff; font-size: 1.45em; font-weight: 600; }
-.app-download-sub { max-width: 26ch; margin-top: 18px; color: #f2eada; font-size: clamp(0.95rem, 1.45vw, 1.5rem); line-height: 1.25; }
-.app-store-btns { display: flex; gap: 12px; margin-top: 28px; }
-.store-badge-link { transition: transform 0.2s var(--ease-out); }
-.store-badge-link:hover { transform: translateY(-2px); }
-.store-badge-img { width: clamp(112px, 12.7vw, 182px); height: auto; border-radius: 8px; }
-
-.app-phone { position: absolute; z-index: 4; left: 40.8%; top: -6%; width: clamp(220px, 24.1vw, 347px); }
-.app-phone-shell, .app-phone-screen { position: absolute; top: 0; left: 0; width: 100%; height: auto; }
-.app-phone-shell { position: relative; z-index: 1; }
-.app-phone-screen { z-index: 2; width: 98.3%; left: 0.9%; top: 1.8%; }
-
-.app-rating-badge, .app-feature-badge { position: absolute; z-index: 5; background: #f2eada; color: #191c19; border-radius: 14px; box-shadow: 0 5px 12px rgba(0,0,0,0.1); }
-.app-rating-badge { left: 45.8%; top: 1.5%; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 14px; }
-.app-rating-stars { color: #d9a319; font-size: 0.6rem; letter-spacing: 1px; }
-.app-rating-badge strong { font: 800 1.5rem/1 var(--font-display); }
-.app-rating-badge span, .app-feature-badge span { color: #6b7280; font-size: 0.62rem; }
-.app-feature-badge { display: flex; align-items: center; gap: 10px; padding: 9px 14px; min-width: 190px; }
-.app-feature-badge img { width: 22px; height: 22px; object-fit: contain; }
-.app-feature-badge div { display: flex; flex-direction: column; gap: 1px; white-space: nowrap; }
-.app-feature-badge strong { font: 700 0.78rem/1.15 var(--font-display); }
-.app-feature-badge--chef { left: 77%; top: 12%; }
-.app-feature-badge--track { left: 78%; top: 42%; }
-.app-feature-badge--pause { left: 46%; top: 80%; }
-.app-feature-badge--fresh { left: 83%; top: 82%; }
-
-@media (max-width: 900px) {
-  .app-download-stage { min-height: 520px; }
-  .app-download-panel { width: calc(100% - 32px); border-radius: 28px; }
-  .app-download-copy { left: 8%; top: 22%; width: 35%; }
-  .app-phone { left: 41%; }
-  .app-feature-badge { transform: scale(0.82); transform-origin: left center; }
-  .app-feature-badge--fresh { left: 76%; }
-}
-
-@media (max-width: 640px) {
-  .app-section { padding: 20px 0; }
-  .app-download-stage { aspect-ratio: auto; min-height: 720px; }
-  .app-download-panel { width: calc(100% - 24px); height: 680px; margin: 20px auto; border-radius: 24px; }
-  .app-download-copy { left: 9%; top: 8%; width: 82%; text-align: center; }
-  .app-download-sub { max-width: 30ch; margin-inline: auto; }
-  .app-store-btns { justify-content: center; margin-top: 20px; }
-  .app-phone { left: 50%; top: 39%; width: 270px; transform: translateX(-50%); }
-  .app-rating-badge { left: 8%; top: 35%; transform: scale(0.8); transform-origin: top left; }
-  .app-feature-badge { transform: scale(0.7); }
-  .app-feature-badge--chef { left: 58%; top: 34%; }
-  .app-feature-badge--track { left: 58%; top: 56%; }
-  .app-feature-badge--pause { left: 4%; top: 82%; }
-  .app-feature-badge--fresh { left: 54%; top: 84%; }
+.app-cta-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 
