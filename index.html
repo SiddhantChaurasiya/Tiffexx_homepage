@@ -34,9 +34,9 @@
   <body>
     <!-- ╔══════════════════ HERO ══════════════════╗ -->
     <section class="hero" id="hero" aria-label="Hero section">
-      <!-- Background video -->
+      <!-- Background video (Desktop) -->
       <video
-        class="hero-video"
+        class="hero-video hero-video--desktop"
         autoplay
         muted
         loop
@@ -45,6 +45,21 @@
       >
         <source
           src="./assets/WhatsApp Video 2026-09-15 at 2.26.40 PM.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <!-- Background video (Mobile) -->
+      <video
+        class="hero-video hero-video--mobile"
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-hidden="true"
+      >
+        <source
+          src="./assets/tiffexx_mobile_hero.mp4"
           type="video/mp4"
         />
       </video>
@@ -2212,6 +2227,32 @@
     </aside>
 
     <script>
+      // ── Responsive Hero Video Controller ────────────────────────────
+      (function initHeroVideo() {
+        const desktopVideo = document.querySelector(".hero-video--desktop");
+        const mobileVideo = document.querySelector(".hero-video--mobile");
+        if (!desktopVideo || !mobileVideo) return;
+
+        function handleHeroPlayback() {
+          const isMobile = window.matchMedia("(max-width: 768px)").matches;
+          if (isMobile) {
+            if (!desktopVideo.paused) desktopVideo.pause();
+            if (mobileVideo.paused) {
+              mobileVideo.play().catch(() => {});
+            }
+          } else {
+            if (!mobileVideo.paused) mobileVideo.pause();
+            if (desktopVideo.paused) {
+              desktopVideo.play().catch(() => {});
+            }
+          }
+        }
+
+        handleHeroPlayback();
+        window.addEventListener("resize", handleHeroPlayback, { passive: true });
+        window.addEventListener("orientationchange", handleHeroPlayback, { passive: true });
+      })();
+
       // ── Reveal on scroll ──────────────────────────────────────────────
       const revealEls = document.querySelectorAll(".reveal");
       const revealObs = new IntersectionObserver(

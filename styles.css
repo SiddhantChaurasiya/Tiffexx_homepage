@@ -184,6 +184,23 @@ svg { display: block; }
   z-index: 0;
 }
 
+.hero-video--desktop {
+  display: block;
+}
+
+.hero-video--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-video--desktop {
+    display: none;
+  }
+  .hero-video--mobile {
+    display: block;
+  }
+}
+
 .hero-scrim {
   position: absolute;
   inset: 0;
